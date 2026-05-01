@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  text-align: center;
+
+  background: url("wumpusworld.png");
+  color: rgb(238, 237, 168);
+}
+
+#grid {
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+
+.agent { 
+    background: blue; color: white; 
+}
+.visited {
+  background: #3498db;
+}
+.warning {
+  background: #f39c12;
+}
+.danger {
+  background: #e74c3c;
+}
+.safe {
+  background: #2ecc71;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 40px;
+  backdrop-filter: blur(10px);
+}
